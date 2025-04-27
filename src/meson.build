@@ -29,7 +29,7 @@ stb_dep = stb_proj.get_variable('stb_dep')
 
 wlroots_dep = dependency(
   'wlroots',
-  version: ['>= 0.18.0', '< 0.19.0'],
+  version: ['>= 0.18.0'],
   fallback: ['wlroots', 'wlroots'],
   default_options: ['default_library=static', 'examples=false', 'xwayland=enabled', 'backends=libinput', 'renderers=[]', 'allocators=[]', 'session=enabled'],
 )
